@@ -1,5 +1,7 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
 
 *{
     margin: 0;
@@ -264,6 +266,7 @@ section .title::after{
 .services, .teams{
     color:#fff;
     background: #111;
+    /* padding: 25px; */
 }
 .services .title::before,
 .teams .title::before{
@@ -277,13 +280,13 @@ section .title::after{
 .services .serv-content .card{
     width: calc(33% - 20px);
     background: rgb(44, 229, 253);
-    color: rgb(95, 93, 93);
+    color: rgb(8, 8, 8);
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-    height: 330px;
+    height: 265px;
     
     box-shadow: 5px 5px 5px rgba(253, 253, 253, 0.5);
 }
@@ -311,8 +314,16 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.services .serv-content .card p{
+    font-family: 'Crimson Text', serif;
+    font-weight: bold;
 }
 
+#bservices {
+    margin-top: -167px;
+}
 /* skills section styling */
 
 /* .skills .title::after{
@@ -403,6 +414,7 @@ section .title::after{
 .teams .carousel .card{
     background: #222;
     border-radius: 6px;
+    height: 409px;
     padding: 25px 35px;
     text-align: center;
     overflow: hidden;
@@ -661,6 +673,7 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+    
     .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
@@ -684,7 +697,7 @@ footer span a:hover{
     }
     .services .serv-content .card{
         width: 100%;
-        height: 340px;
+        height: 265px;
     }
     
 }
